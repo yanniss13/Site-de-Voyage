@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Voyage - 12 Destinations</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="Voyage">
+        <a href="index.html"><h1>EXPLORE LE MONDE</h1></a>
+        <p>3 destinations de rêve à découvrir en Asie</p>
+    </header>
+
+    <main class="container">
+        <h2 class="continent">ASIE DU SUD-EST</h2>
+
+        <div class="destinations-grid">
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('./assets/Image/bali.jpg');">
+                    <span class="tag">Nature</span>
+                </div>
+                <div class="card-content">
+                    <h3>Indonésie</h3>
+                    <p>Des temples de Bali aux volcans de Java, un archipel aux mille couleurs.</p>
+                    <a href="#" class="bouton" data-target="modal-indonesie">Voir le guide</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('./assets/Image/thailande.jpg');">
+                    <span class="tag">Temple</span>
+                </div>
+                <div class="card-content">
+                    <h3>Thaïlande</h3>
+                    <p>Le pays du sourire : street food incroyable, temples dorés et îles paradisiaques.</p>
+                    <a href="#" class="bouton" data-target="modal-thailande">Voir le guide</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('./assets/Image/vietnam.jpg');">
+                    <span class="tag">Culture</span>
+                </div>
+                <div class="card-content">
+                    <h3>Vietnam</h3>
+                    <p>De la baie d'Ha Long au delta du Mékong, une aventure culinaire et historique.</p>
+                    <a href="#" class="bouton" data-target="modal-vietnam">Voir le guide</a>
+                </div>
+            </article>
+
+        </div>
+        <div id="modal-indonesie" class="modal">
+            <div class="modal-content">
+                <span class="bouton-x">&times;</span>
+                <h2>Guide de voyage : Indonésie</h2>
+                <img src="./assets/Image/bali.jpg" alt="Indonésie" class="modal-img">
+                <div class="modal-info">
+                    <p><strong>Meilleure saison :</strong> Mai à Septembre (Saison sèche).</p>
+                    <p><strong>Budget :</strong> 25€ - 40€ / jour.</p>
+                    <p><strong>À ne pas manquer :</strong></p>
+                    <ul>
+                        <li>Les temples d'Ubud et la forêt des singes.</li>
+                        <li>Le lever de soleil sur le Mont Batur.</li>
+                        <li>Les plages de Nusa Penida.</li>
+                        <li>Les dragons de Komodo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-thailande" class="modal">
+            <div class="modal-content">
+                <span class="bouton-x">&times;</span>
+                <h2>Guide de voyage : Thaïlande</h2>
+                <img src="./assets/Image/thailande.jpg" alt="Thaïlande" class="modal-img">
+                <div class="modal-info">
+                    <p><strong>Meilleure saison :</strong> Novembre à Février.</p>
+                    <p><strong>Budget :</strong> 30€ - 50€ / jour.</p>
+                    <p><strong>À ne pas manquer :</strong></p>
+                    <ul>
+                        <li>Le Grand Palais à Bangkok.</li>
+                        <li>Les îles de Koh Phi Phi.</li>
+                        <li>Les temples de Chiang Mai.</li>
+                        <li>La cuisine de rue (Pad Thai !).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-vietnam" class="modal">
+            <div class="modal-content">
+                <span class="bouton-x">&times;</span>
+                <h2>Guide de voyage : Vietnam</h2>
+                <img src="./assets/Image/vietnam.jpg" alt="Vietnam" class="modal-img">
+                <div class="modal-info">
+                    <p><strong>Meilleure saison :</strong> Février à Avril.</p>
+                    <p><strong>Budget :</strong> 20€ - 35€ / jour.</p>
+                    <p><strong>À ne pas manquer :</strong></p>
+                    <ul>
+                        <li>Croisière dans la baie d'Ha Long.</li>
+                        <li>La vieille ville de Hoi An.</li>
+                        <li>La street food de Hanoï.</li>
+                        <li>Les montagnes de Sapa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll('.bouton');
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.bouton-x');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = button.getAttribute('data-target');
+                const modal = document.getElementById(targetId);
+                modal.classList.add('active');
+            });
+        });
+
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.closest('.modal').classList.remove('active');
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
