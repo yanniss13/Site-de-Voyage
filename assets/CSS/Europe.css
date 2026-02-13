@@ -58,7 +58,5 @@ header {
     opacity: 1;
 }
 
-.overlay p {
-    padding: 0 10px;
-    font-size: 0.9rem;
-}
+.overlay h3 { margin: 0 0 10px 0; color: #fff; }
+.overlay p { margin: 0; font-size: 0.9rem; }
