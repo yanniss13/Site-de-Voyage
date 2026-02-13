@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6; 
+    color: #333;
+}
+
+.Voyage {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/Image/Asie.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.Voyage a {
+    text-decoration: none;
+    color: #f4f7f6;
+}
+
+a:hover {
+    color: #ff6b6b;
+}
+
+.Monde {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/Image/Monde.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.Voyage h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.Monde h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.continent {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ff6b6b; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destinations-grid-continent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff6b6b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card-content p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.bouton {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+    border: 2px solid #ff6b6b;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.bouton:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+.card-content .bouton {
+    margin-top: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.bouton-x {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.bouton-x:hover {
+    color: #ff6b6b;
+}
+
+.modal-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.modal-info p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-info ul {
+    margin-left: 20px;
+    color: #555;
+}
