@@ -62,7 +62,7 @@ body {
 
 .image-mada img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
     border: solid black
@@ -87,7 +87,7 @@ body {
 
 .image-benin img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
     border: solid black
@@ -113,7 +113,7 @@ body {
 
 .image-egypte img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
     border: solid black
