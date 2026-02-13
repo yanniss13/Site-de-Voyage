@@ -80,12 +80,14 @@ header {
     margin: 0 0 5px 0;
     font-size: 1.6rem;
 }
+
 footer {
     text-align: center;
-    padding: 40px 0;
-    border-top: 1px solid #333;
-    color: #777;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #aaa;
 }
+
 @media (max-width: 900px) {
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
