@@ -23,6 +23,15 @@ body {
     text-align: center;
 }
 
+.Voyage a {
+    text-decoration: none;
+    color: #f4f7f6;
+}
+
+a:hover {
+    color: #ff6b6b;
+}
+
 .Monde {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/Image/Monde.jpg');
     background-size: cover;
