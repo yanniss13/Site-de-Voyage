@@ -20,9 +20,11 @@ a:hover {
 }
 
 header {
+    text-decoration: none;
+    color: white;
     text-align: center;
     padding: 60px 20px;
-    background: #1a1a1a;
+    background: rgba(26, 26, 26, 0.8);
 }
 
 .country-section {
