@@ -18,6 +18,10 @@ header {
     background: #1a1a1a;
 }
 
+.country-section {
+    margin-bottom: 80px;
+}
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
