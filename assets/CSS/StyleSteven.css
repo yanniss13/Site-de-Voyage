@@ -11,8 +11,32 @@
     display: block;
     padding: 0px;
     object-fit: cover;
-    object-position: center ;
+    object-position: center;
 
+}
+
+.title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  z-index: 2;
+  text-shadow: 0 4px 10px rgba(0,0,0,.6);
+}
+
+body {
+    margin: 0;
+    background-image: url(/assets/image/StevenImages/c296353d-eb46-4998-bdba-b3c58fbd96ce.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.texte {
+    background-color: aliceblue;
+    border: solid black;
 }
 
 .space {
@@ -23,23 +47,25 @@
 /* mada */
 .mada {
     padding: 100px;
-    background-color: rgba(108, 94, 43, 0.639);
+    background-color: rgba(108, 94, 43, 0.388);
     border: 5px solid rgb(69, 64, 64);
     border-style: inset;
 }
+
 .image-mada {
     display: grid;
-    grid-template-columns: repeat( 3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    align-content: center ;
+    align-content: center;
     padding: 0px;
 }
 
 .image-mada img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
+    border: solid black
 }
 
 /*benin*/
@@ -48,21 +74,23 @@
     padding: 100px;
     border: 5px solid rgb(69, 64, 64);
     border-style: inset;
-    background-color: rgba(30, 121, 36, 0.648);
+    background-color: rgba(30, 121, 36, 0.342);
 }
+
 .image-benin {
     display: grid;
-    grid-template-columns: repeat( 3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    align-content: center ;
+    align-content: center;
     padding: 0px;
 }
 
 .image-benin img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
+    border: solid black
 }
 
 /*egypte*/
@@ -71,21 +99,72 @@
     padding: 100px;
     border: 5px solid rgb(69, 64, 64);
     border-style: inset;
-    background-color: rgba(244, 204, 0, 0.692);
+    background-color: rgba(244, 203, 0, 0.372);
 }
+
 .image-egypte {
     display: grid;
-    grid-template-columns: repeat( 3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    align-content: center ;
+    align-content: center;
     padding: 0px;
-    
+
 }
 
 .image-egypte img {
     height: 200px;
-    width: 100;
+    width: 100%;
     object-fit: cover;
     display: block;
-    border:solid black
+    border: solid black
+}
+
+/*footer*/
+
+.footer-afrique {
+    background: rgba(0, 0, 0, 0.75);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+.footer-afrique nav {
+    margin-top: 8px;
+}
+
+.footer-afrique a {
+    color: #d4af37; /* or africain / sable */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.2s;
+}
+
+.footer-afrique a:hover {
+    opacity: 0.7;
+}
+/* back */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: background 0.2s, transform 0.2s, opacity 0.2s;
+    opacity: 0.8;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(-2px);
+    opacity: 1;
 }
