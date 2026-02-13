@@ -1,0 +1,91 @@
+.top {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0px;
+    object-fit: cover;
+    object-position: center ;
+
+}
+
+.space {
+    display: block;
+    height: 10px;
+}
+
+/* mada */
+.mada {
+    padding: 100px;
+    background-color: rgba(108, 94, 43, 0.639);
+    border: 5px solid rgb(69, 64, 64);
+    border-style: inset;
+}
+.image-mada {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr) ;
+    gap: 16px;
+    align-content: center ;
+    padding: 0px;
+}
+
+.image-mada img {
+    height: 200px;
+    width: 100;
+    object-fit: cover;
+    display: block;
+}
+
+/*benin*/
+
+.benin {
+    padding: 100px;
+    border: 5px solid rgb(69, 64, 64);
+    border-style: inset;
+    background-color: rgba(30, 121, 36, 0.648);
+}
+.image-benin {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr) ;
+    gap: 50px;
+    align-content: center ;
+    padding: 0px;
+}
+
+.image-benin img {
+    height: 200px;
+    width: 100;
+    object-fit: cover;
+    display: block;
+}
+
+/*egypte*/
+
+.egypte {
+    padding: 100px;
+    border: 5px solid rgb(69, 64, 64);
+    border-style: inset;
+    background-color: rgba(244, 204, 0, 0.692);
+}
+.image-egypte {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr) ;
+    gap: 16px;
+    align-content: center ;
+    padding: 0px;
+    
+}
+
+.image-egypte img {
+    height: 200px;
+    width: 100;
+    object-fit: cover;
+    display: block;
+    border:solid black
+}
