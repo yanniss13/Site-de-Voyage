@@ -52,6 +52,8 @@ header {
 }
 
 .overlay {
+    text-decoration: none;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
