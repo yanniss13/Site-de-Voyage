@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Voyage {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/Images/desert-atacama-panoramique.webp");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #f4f7f6;
+  }
+}
+h1 {
+  text-align: center;
+}
+a:hover {
+  color: #ff6b6b;
+}
+.row {
+  padding: 40px 60px;
+}
+
+.intro {
+  padding: 30px;
+  h1 {
+    padding-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+article {
+  background-color: #ffeaea;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  p {
+    line-height: 1.5;
+    padding-bottom: 15px;
+  }
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin: 20px 0px;
+}
+
+button {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff3d3d;
+}
+
+@media (min-width: 768px) {
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
